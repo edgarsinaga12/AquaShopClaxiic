@@ -1,0 +1,123 @@
+:root {
+  --utama: #1dad18;
+  --BGCOLOR: #fff;
+  --bgvar: #00f80c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--utama);
+  color: #04ff00;
+  background-image: url("../img/laptop-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(2, 118, 12);
+  border-bottom: 1px solid var(--utama);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00d0ff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: #fff;
+}
+
+.navbar .navbar-nav a {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: #fff;
+  background-color: var(--bgvar);
+  border-radius: 1rem;
+  box-shadow: rgba(1, 1, 3, 0.5);
+}
+.navbar .navbar-nav a:hover {
+  color: grey;
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid gold;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+.navbar .navbar-extra a {
+  color: #f5f4f4;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  color: gray;
+}
+.navbar .cta {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--utama);
+  border-radius: 1rem;
+  box-shadow: rgba(1, 1, 3, 0.5);
+}
+h1 {
+  color: rgb(252, 252, 252);
+}
+h2 {
+  color: white;
+}
+h2 span {
+  color: rgb(255, 38, 0);
+  border: yellow;
+  mix-blend-mode: difference;
+}
+table {
+  color: white;
+}
+/* footer */
+footer {
+  background-color: #8dba56;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 70px;
+}
+footer .socials {
+  padding: 1rem 0;
+}
+footer .links a:hover {
+  color: gray;
+}
+footer .links {
+  margin-bottom: 1.6rem;
+}
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
